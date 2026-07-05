@@ -3,7 +3,7 @@
 
 > **Framework Profissional de Inteligência Artificial para Perícia Contábil**
 >
-> Um framework modular desenvolvido para automatizar, padronizar e auxiliar a elaboração de laudos periciais contábeis por meio de Inteligência Artificial, engenharia de prompts e arquitetura orientada a agentes.
+> Um framework modular desenvolvido para automatizar a elaboração de laudos e cálculos periciais contábeis conforme a legislação e as determinações judiciais contidas nas decisões e sentenças do juízo, padronizar e auxiliar a elaboração de cálculos e laudos periciais contábeis por meio de Inteligência Artificial, engenharia de prompts e arquitetura orientada a agentes.
 
 ---
 
@@ -24,9 +24,9 @@
 
 # Visão Geral
 
-O **PERITO-AI** é um framework especializado para a automação de processos de Perícia Contábil utilizando Inteligência Artificial.
+O **PERITO-AI** é um framework especializado em perícia contábil identificando conforme as determinações judiciais o que deve ser feito e como deve ser feito para atender a determinação judicial, a automação de processos de Perícia Contábil utilizando Inteligência Artificial.
 
-Seu objetivo é reduzir o tempo de elaboração de laudos, aumentar a padronização técnica, minimizar erros humanos e permitir que o perito concentre seus esforços na análise crítica das informações.
+Seu objetivo é produzir cálculos e laudos periciais contábeis, seguindo o padrão na NBC TP 01, conforme a lei e as determinações nas sentenças e decisões judiciais, verificando súmulas judiciais, decisões reiteradas, OJs e a legislação atualizada, reduzir o tempo de elaboração de laudos, aumentar a padronização técnica, minimizar erros humanos e permitir que o perito concentre seus esforços na análise crítica das informações.
 
 O projeto foi concebido seguindo princípios modernos de Engenharia de Software, Arquitetura Limpa (Clean Architecture), Engenharia de Prompts e Sistemas Multiagentes.
 
@@ -40,8 +40,9 @@ O PERITO-AI busca oferecer uma plataforma capaz de:
 
 - Automatizar análises documentais.
 - Interpretar documentos contábeis.
-- Gerar laudos técnicos.
-- Auxiliar na elaboração de quesitos.
+- Executar os cálculos conforme a orientação da decisão e da sentença judicial exolicando sua metodologia e a lei utilizada
+- Gerar laudos técnicos embasados na lei e nos cálculos executados com citação da lei que defende a decisão no laudo.
+- Responder aos quesitos das partes e incluir as respostas nos laudo.
 - Apoiar respostas técnicas.
 - Organizar evidências.
 - Validar consistência documental.
@@ -75,6 +76,7 @@ O PERITO-AI busca oferecer uma plataforma capaz de:
 - Contratos
 - Procurações
 - Peças processuais
+- PNG  e svg e jpeg
 
 ---
 
@@ -83,6 +85,8 @@ O PERITO-AI busca oferecer uma plataforma capaz de:
 - Conferência documental
 - Cruzamento de informações
 - Identificação de inconsistências
+- cruzamento com a lei, súmulas, decisões reiteradas dos tribunais
+- identificar a determinação contida na Decisão Judicial e na Sentença Judicial
 - Cálculos periciais
 - Correções monetárias
 - Atualizações financeiras
