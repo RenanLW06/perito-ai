@@ -1,14 +1,18 @@
-"""
-Pipeline Engine
-Controls execution flow of the system
-"""
+from src.pipelines.document_pipeline import DocumentPipeline
 
 
 class PipelineEngine:
-    def execute(self):
-        print("Executing base pipeline...")
 
-        return {
-            "status": "success",
-            "message": "Skeleton pipeline executed"
+    def __init__(self):
+        self.pipeline = DocumentPipeline()
+
+    def execute(self):
+
+        context = {
+            "document": {},
+            "metadata": {},
+            "analysis": {},
+            "report": {}
         }
+
+        return self.pipeline.run(context)
