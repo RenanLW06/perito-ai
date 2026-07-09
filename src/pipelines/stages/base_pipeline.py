@@ -4,12 +4,14 @@ class BasePipeline:
 
         self.stages = []
 
-    def run(self, context: dict):
+    def run(self, context):
 
         for stage in self.stages:
 
-            print(f"Executing stage: {stage.name}")
+            context.set_stage(stage.name)
 
-            context = stage.execute(context)
+            context.add_log(f"Executing {stage.name}")
+
+            stage.execute(context)
 
         return context
